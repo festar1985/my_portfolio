@@ -1,0 +1,94 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Inter, sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: #222224;
+  color: #31ad6b;
+}
+
+.header--container {
+  background: #31ad6b;
+  height: 8rem;
+  display: flex;
+  position: fixed;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  color: #222224;
+}
+
+#header--title {
+  flex-basis: 3;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0 20% 0 20%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0 10px;
+  padding-left: 0;
+}
+
+.navbar--link {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #222224;
+  font-weight: bold;
+}
+
+#welcome-section {
+  margin-top: 220px;
+  text-align: center;
+  height: 100vh;
+}
+
+#projects {
+  text-align: center;
+}
+
+#projects--container {
+  margin: 20px 20%;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#signature {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.logo {
+  border: 3px solid #31ad6b;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 15px;
+  max-width: 140px;
+  height: 140px;
+}
+
+@media screen and (max-width: 1200px) {
+  #header--title {
+    flex-basis: 3;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0 15% 0 15%;
+  }
+}
